@@ -38,8 +38,17 @@
         </div>
       </div>
     </nav>
-    <div class="img" style="position: absolute; margin-top: 97px">
-    <img src="assest/img/background.jpg" alt="" width="1367px">
+  <div class="img" style="position: absolute; margin-top: 97px">
+        <img src="assest/img/background.jpg" alt="" width="1349px">
+  </div>
+  <div class="img-background" style="position:absolute;margin-top: 535px">
+    <img src="assest/img/background2.jpg" alt="" width="1349px">
+  </div>
+  <div class="componen1" style="position: absolute; margin-top:86px; margin-left:849px">
+    <img src="assest/img/componen1.png" alt="" width="500px">
+  </div>
+  <div class="componen2" style="position: absolute; margin-top:570px; margin-left:15px">
+    <img src="assest/img/componen2.png" alt="" width="400px">
   </div>
     <div class="container">
        @yield('container')
