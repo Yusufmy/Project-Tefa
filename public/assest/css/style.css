@@ -1,0 +1,129 @@
+.dashboard_admin {
+    width: 1292;
+    height: 2902;
+    top: 1440;
+    left: 1100;
+}
+.welcome_admin {
+    width: 301px;
+    height: 168px;
+    top: 1300px;
+    left: 300px;
+}
+.garis {
+    position: absolute;
+    width: 1750px;
+    height: 0px;
+    left: 100px;
+    top: 250px;
+
+    border: 1px solid #000000;
+    transform: rotate(-0.01deg);
+}
+.name1 {
+    position: absolute;
+    width: 672px;
+    height: 73px;
+    left: 300px;
+    top: 80px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: #5cab8d;
+}
+.name2 {
+    position: absolute;
+    width: 672px;
+    height: 73px;
+    left: 300px;
+    top: 160px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 73px;
+
+    color: #000000;
+}
+.img {
+    position: absolute;
+    width: 400;
+    height: 1024;
+    left: 0;
+    top: 0;
+}
+
+.imgSMK {
+    width: 400;
+}
+.image {
+    position: absolute;
+    height: 300px;
+    left: 40px;
+    top: 50px;
+    border-radius: 500px;
+}
+.dashboard {
+    position: absolute;
+    width: 177px;
+    height: 37px;
+    left: 50px;
+    top: 160px;
+
+    font-style: normal;
+    font-family: initial;
+    font-size: small;
+    color: #000000;
+}
+.produk {
+    position: absolute;
+    width: 209px;
+    height: 35px;
+    left: 0px;
+    top: 300px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #000000;
+}
+.profite {
+    position: absolute;
+    width: 209px;
+    height: 35px;
+    left: 0px;
+    top: 400px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.account {
+    position: absolute;
+    height: 154px;
+    left: 30px;
+    right: 3px;
+    top: 150px;
+
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+
+    color: #5cab8d;
+}
