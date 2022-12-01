@@ -14,7 +14,7 @@ class TefaController extends Controller
      */
     public function index()
     {
-        return view('/main');
+        return view('login.login');
     }
     /**
      * Show the form for creating a new resource.

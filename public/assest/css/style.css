@@ -1,7 +1,11 @@
 body {
-    height: 5750px;
-    background-color: rgb(252, 248, 248);
+    background-color: white;
 }
+#login {
+    color: rgba(92, 171, 141, 1);
+    margin-right: 30%;
+}
+
 .jumbotron {
     background-image: url(../img/background.jpg);
     background-size: cover;

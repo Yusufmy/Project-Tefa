@@ -15,6 +15,7 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 |
 */
 
-Route::get('/', [TefaController::class, 'index'])->name('main.io');
+Route::get('/', [TefaController::class, 'index'])->name('login.io');
+Route::get('/main', [TefaController::class, 'main'])->name('main.io');
 
 

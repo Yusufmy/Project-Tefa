@@ -15,7 +15,7 @@
   </head>
   <body>
 {{-- Navbar --}}
-    <nav class="navbar navbar-expand-lg navbar-dark "
+    {{-- <nav class="navbar navbar-expand-lg navbar-dark "
     style="background-color: #050f2c;">
       <div class="container">
         <img src="assest/img/imgSMK.png" width="80px">
@@ -46,11 +46,11 @@
           <a style="text-decoration: none" class="text-white" href="#">Login</a>
         </div>
       </div>
-    </nav>
+    </nav> --}}
 {{-- Akhir Navbar --}}
 
 {{-- Jumbotron --}}
-<section id="getstart">
+{{-- <section id="getstart">
     <div class="jumbotron">
       <div class="container">
         <div class="image" style="position: absolute;background-size:cover; background-repeat: no-repeat;
@@ -71,11 +71,11 @@
           </div>
        </div> 
     </div>
-</section>
+</section> --}}
 {{-- Akhir Jumbotron --}}
 
 {{-- Activity TEFA --}}
-<section id="active">
+{{-- <section id="active">
     <div class="componen2" style="position: absolute; max-width:100%">
       <img src="assest/img/componen2.png" width="400px">
     </div>
@@ -88,11 +88,11 @@
               </div>
           </div>
        </div>
-</section>
+</section> --}}
 {{-- Akhir activity TEFA--}}
 
 {{-- Goal TEFA --}}
-<section id="goal">
+{{-- <section id="goal">
   <div class="container">
     <div class="row text-end">
       <div class="col mt-2 mb-3">
@@ -102,11 +102,11 @@
        </div>
     </div>
   </div>
-</section>
+</section> --}}
 {{-- Akhir Goal TEFa --}}
 
 {{-- Benefit TEFA --}}
-<section id="benefit">
+{{-- <section id="benefit">
   <div class="container">
     <div class="row">
       <div class="col text-white mb-5 mt-3">
@@ -126,11 +126,11 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
 {{-- Akhir benefit TEFA --}}
 
 {{-- Produk Kejuruan --}}
- <section id="portfolio" class="portfolio">
+ {{-- <section id="portfolio" class="portfolio">
  <div class="container">
   <div class="row mt-5 text-center">
     <div class="col">
@@ -207,11 +207,11 @@
   </div>
  </div>
  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#050f2c" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,90.7C672,64,768,96,864,138.7C960,181,1056,235,1152,229.3C1248,224,1344,160,1392,128L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
- </section>
+ </section> --}}
 {{-- Akhir produk kejuruan --}}
 
 {{-- Team --}}
-<section id="team">
+{{-- <section id="team">
   <div class="container">
     <div class="row text-center text-white">
       <div class="col-md">
@@ -269,11 +269,11 @@
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L48,90.7C96,117,192,171,288,176C384,181,480,139,576,101.3C672,64,768,32,864,53.3C960,75,1056,149,1152,160C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-</section>
+</section> --}}
 {{-- Akhir Team --}}
 
 {{-- Industry --}}
-<section id="industry">
+{{-- <section id="industry">
 <div class="container">
   <div class="row">
     <div class="col text-center mb-5">
@@ -331,11 +331,11 @@
     </div>
   </div>
 </div>
-</section>
+</section> --}}
 {{-- Akhir Industry --}}
 
 {{-- Contact --}}
-<section id="contact">
+{{-- <section id="contact">
 <div class="container">
   <h2 class="text-center">Kenapa Memesan di Kami?</h2>
   <div class="row">
@@ -371,11 +371,11 @@
     </div>
   </div>
 </div>
-</section>
+</section> --}}
 {{-- Akhit contact --}}
 
 {{-- Footer --}}
-<section id="footer">
+{{-- <section id="footer">
 <div class="container">
   <div class="row text-center">
     <div class="col mt-5">
@@ -422,7 +422,7 @@
     <p>Created with by student SMK Wikrama Wikrama</p>
   </footer>
 </div>
-</section>
+</section> --}}
 {{-- Akhir footer --}}
 <div class="container">
   @yield('container')
