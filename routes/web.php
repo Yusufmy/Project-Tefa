@@ -16,4 +16,5 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 */
 
 Route::get('/', [TefaController::class, 'index'])->name('main.io');
-Route::get('/home', [TefaController::class, 'home'])->name('home.io');
+
+

@@ -15,7 +15,7 @@
   </head>
   <body>
 {{-- Navbar --}}
-    <nav class="navbar navbar-expand-lg navbar-dark"
+    <nav class="navbar navbar-expand-lg navbar-dark "
     style="background-color: #050f2c;">
       <div class="container">
         <img src="assest/img/imgSMK.png" width="80px">
@@ -43,6 +43,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#getstart">Getstart</a>
           </li>
+          <a style="text-decoration: none" class="text-white" href="#">Login</a>
         </div>
       </div>
     </nav>
@@ -336,7 +337,7 @@
 {{-- Contact --}}
 <section id="contact">
 <div class="container">
-  <h2 class="text-white text-center">Kenapa Memesan di Kami?</h2>
+  <h2 class="text-center">Kenapa Memesan di Kami?</h2>
   <div class="row">
     <div class="col-4 mt-5">
       <div class="card text-center">
@@ -363,10 +364,10 @@
       </div>
     </div>
   </div>
-  <div class="row text-white">
+  <div class="row">
     <div class="col mt-5 text-center">
       <h4>Tunggu apalagi? Ayo lengkapi kebutuhan kamu sekarang juga!</h4>
-      <button type="button" class="btn btn-primary mt-2">Pesan sekarang</button>
+      <button type="button" class="btn btn-primary mt-3">Pesan sekarang</button>
     </div>
   </div>
 </div>
@@ -376,8 +377,8 @@
 {{-- Footer --}}
 <section id="footer">
 <div class="container">
-  <div class="row mt-5 text-center">
-    <div class="col">
+  <div class="row text-center">
+    <div class="col mt-5">
       <h2>TEFA’s Project</h2>
     </div>
   </div>
@@ -418,7 +419,7 @@
     </div>
   </div>
   <footer class="mt-4 text-center">
-    <p>Created with by student SMK Wikrama</p>
+    <p>Created with by student SMK Wikrama Wikrama</p>
   </footer>
 </div>
 </section>

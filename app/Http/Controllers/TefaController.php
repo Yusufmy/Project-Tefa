@@ -7,11 +7,6 @@ use Illuminate\Http\Request;
 
 class TefaController extends Controller
 {
-    public function home()
-    {
-        return view('dashboard.home');
-
-    }
     /**
      * Display a listing of the resource.
      *
@@ -19,7 +14,7 @@ class TefaController extends Controller
      */
     public function index()
     {
-        return view('main');
+        return view('/main');
     }
     /**
      * Show the form for creating a new resource.

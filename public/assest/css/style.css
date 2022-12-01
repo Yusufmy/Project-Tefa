@@ -1,5 +1,6 @@
 body {
-    height: 5850px;
+    height: 5750px;
+    background-color: rgb(252, 248, 248);
 }
 .jumbotron {
     background-image: url(../img/background.jpg);
@@ -40,13 +41,12 @@ li {
 }
 
 #contact {
-    background-color: #050f2c;
     margin-top: 10%;
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
-#footer{
+#footer {
     background-color: #050f2c;
     color: white;
 }
