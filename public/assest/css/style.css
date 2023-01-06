@@ -1,9 +1,13 @@
 body {
     background-color: white;
 }
-#login {
-    color: rgba(92, 171, 141, 1);
-    margin-right: 30%;
+
+#login{
+    background-image: url(../img/smk/gedungWikrama.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 695px;
 }
 
 .jumbotron {
