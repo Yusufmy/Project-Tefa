@@ -15,9 +15,12 @@ return new class extends Migration
     {
         Schema::create('tefas', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_product');
-            $table->string('product_major');
-            $table->string('industry');
+            $table->bigInteger('user_id');
+            $table->string('foto_produk');
+            $table->string('nama_produk');
+            $table->string('name_jurusan');
+            $table->text('deskription');
+            $table->boolean('status');
             $table->timestamps();
         });
     }

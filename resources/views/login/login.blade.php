@@ -12,6 +12,11 @@
                                     {{ session('error') }}
                                 </div>
                             @endif
+                            @if (session('success'))
+                                <div class="alert alert-success">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
                             @if (session('notAllowed'))
                                 <div class="alert alert-danger">
                                     {{ session('notAllowed') }}
@@ -19,7 +24,7 @@
                             @endif
                             <h2 class="text-center">Login</h2>
                             <p class="text-center">Masukan Akun Admin</p>
-                            <form action="" method="POST">
+                            <form action="/login/auth" method="POST">
                                 @csrf
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Username</label>

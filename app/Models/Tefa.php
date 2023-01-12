@@ -8,12 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Tefa extends Model
 {
     use HasFactory;
-    protected $fillabel = [
+    protected $fillable = [
         'user_id',
-        'title',
-        'description',
-        'date',
-        'satatus',
-        'done_time',
+        'foto_produk',
+        'nama_produk',
+        'name_jurusan',
+        'deskription',
+        'status',
     ];
 }

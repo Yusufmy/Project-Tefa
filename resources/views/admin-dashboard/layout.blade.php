@@ -1,22 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     {{-- My CSS --}}
     <link rel="stylesheet" href="assest/css/sb-admin-2.css">
     <link rel="stylesheet" href="assest/css/sb-admin-2.min.css">
 
     <title>Tefa | SMK Wikrama Bogor</title>
-  </head>
-  <body>
-      <!-- Page Wrapper -->
-      <div id="wrapper">
+</head>
+
+<body>
+    <!-- Page Wrapper -->
+    <div id="wrapper">
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -31,27 +35,37 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link" href="dashboard">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Major Product Data</span></a>
+                    <span>Dashboard</span></a>
             </li>
+            @if (Auth::user()->role == 'admin')
+                <hr class="sidebar-divider my-0">
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item">
+                    <a class="nav-link" href="productData">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Major Product Data</span></a>
+                </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link" href="productProfit">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Major Product Profit</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="industry">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Major Industry</span></a>
-            </li>
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link" href="productProfit">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Major Product Profit</span></a>
+                </li>
+                <hr class="sidebar-divider">
+                <li class="nav-item">
+                    <a class="nav-link" href="industry">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Major Industry</span></a>
+                </li>
+            @endif
         </ul>
+
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -86,7 +100,8 @@
                                 <form class="form-inline mr-auto w-100 navbar-search">
                                     <div class="input-group">
                                         <input type="text" class="form-control bg-light border-0 small"
-                                            placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
                                         <div class="input-group-append">
                                             <button class="btn btn-primary" type="button">
                                                 <i class="fas fa-search fa-sm"></i>
@@ -97,27 +112,19 @@
                             </div>
                         </li>
                         <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Hi, Admin</span>
-                                {{-- <img class="img-profile rounded-circle" src="img/undraw_profile.svg"> --}}
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                                aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Profile
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Logout
-                                </a>
-                            </div>
-                        </li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-fill"></i> {{ Auth::user()->name }}
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                                <form action="{{ route('logout') }}" method="post">
+                                    @csrf
+                                    <li><button type="submit" class="dropdown-item" href="#">Logout</button></li>
+                                </form>
+                            </ul>
+                        </div>
 
                     </ul>
 
@@ -125,7 +132,7 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                
+
                 @yield('content')
                 <!-- /.container-fluid -->
             </div>
@@ -171,6 +178,9 @@
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>

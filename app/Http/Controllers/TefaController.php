@@ -25,6 +25,14 @@ class TefaController extends Controller
         return view('admin-dashboard.dashboard');
     }
 
+
+
+    public function productData()
+    {
+        $tefas = Tefa::all();
+        return view('admin-dashboard.productData', compact('tefas'));
+    }
+
     public function login()
     {
         return view('login.login');
@@ -83,6 +91,55 @@ class TefaController extends Controller
         ]);
 
         return redirect('/login')->with('success', 'Berhasil menambahkan akun! silakan login');
+    }
+
+
+    public function logout()
+    {
+        auth::logout();
+        return redirect('login');
+    }
+
+    public function error()
+    {
+        return view('landingPage.error');
+    }
+
+    public function profile()
+    {
+        $tefas = Tefa::all();
+        return view('profile.profile', compact('tefas'));
+    }
+
+    public function uploadProfile()
+    {
+        return view('profile.uploadProfile');
+    }
+
+    public function changeProfile(Request $request)
+    {
+        // dd($request->all());
+        $request->validate([
+            'image_profile' => 'required|image|mimes:jpg,png,jpeg,gif'
+        ]);
+
+        $image = $request->file('image_profile');
+
+        $imgName = time() . rand() . '.' . $image->extension();
+
+        if (!file_exists(public_path('/assets/img/' . $image->getClientOriginalName()))) {
+            $destinationPath = public_path('/assets/img/');
+
+            $image->move($destinationPath, $imgName);
+            $uploaded = $imgName;
+        } else {
+            $uploaded = $image->getClientOriginalName();
+        }
+        User::where('id', Auth::user()->id)->update([
+            'image_profile' => $uploaded,
+        ]);
+
+        return redirect()->route('profile')->with('successUploading', 'Foto profile berhasil diperbarui');
     }
     /**
      * Show the form for creating a new resource.

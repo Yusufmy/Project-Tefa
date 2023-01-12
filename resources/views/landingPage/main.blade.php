@@ -383,7 +383,7 @@
     </div>
   </div>
   <div class="row mt-2">
-    <div class="col-6 text-center" style="margin-left: 265px">
+    <div class="col-md-6 text-center" style="margin-left: 265px">
       <h5><p>WebTefa contains information about products and
         can buy services according to the available prices</p></h5>
     </div>
@@ -396,21 +396,21 @@
   <h3>Kontak Kami</h3>
   <hr style="color: #050f2c" width="300px">
   <div class="row mt-4">
-    <div class="col-4">
+    <div class="col-md-4 mt-2">
       <div class="card text-center">
         <div class="card-body">
           <i class="bi bi-whatsapp text-dark"> 0291-578191</i>
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-md-4 mt-2">
       <div class="card text-center">
         <div class="card-body">
           <i class="bi bi-instagram text-dark"> smkwikrama</i>
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-md-4 mt-2">
       <div class="card text-center">
         <div class="card-body">
           <i class="bi bi-envelope text-dark"> prohumasi@smkwikrama.sch.id</i>
