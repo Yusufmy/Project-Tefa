@@ -17,7 +17,8 @@ class TefaController extends Controller
      */
     public function index()
     {
-        return view('landingPage.main');
+        $tefas = Tefa::all();
+        return view('landingPage.main',compact('tefas'));
     }
 
     public function dashboard()

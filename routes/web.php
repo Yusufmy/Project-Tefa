@@ -23,14 +23,13 @@ Route::middleware('isLogin', 'CekRole:admin')->group(function () {
     Route::get('/productData', [TefaController::class, 'productData'])->name('product.data');
     Route::get('/productProfit', [TefaController::class, 'productProfit'])->name('product.profit');
     Route::get('/industry', [TefaController::class, 'industry'])->name('product.industry');
-    Route::delete('/delete/{id}',[ProdukController::class, 'destroy'])->name('delete');
+    Route::delete('/delete/{id}', [ProdukController::class, 'destroy'])->name('delete');
 });
 
-Route::middleware('isLogin', 'CekRole:admin,user')->group(function(){
-    Route::get('/profile',[TefaController::class, 'profile'])->name('profile');
-    Route::get('/tefa/profile/upload',[TefaController::class, 'uploadProfile'])->name('tefa.profile.upload');
-    Route::patch('/tefa/profile/change', [TefaController::class, 'changeProfile'])->name('tefa.profile.change');
-    
+Route::middleware('isLogin', 'CekRole:admin,user')->group(function () {
+    Route::get('/profile', [TefaController::class, 'profile'])->name('profile');
+    Route::get('/uploadProfile', [TefaController::class, 'uploadProfile'])->name('uploadProfile');
+    Route::patch('/tefa/profile/change', [TefaController::class, 'changeProfile'])->name('changeProfile');
 });
 Route::get('/', [TefaController::class, 'index']);
 
