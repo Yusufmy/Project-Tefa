@@ -255,10 +255,10 @@
                 <div class="col-md-6 mb-5 mt-5">
                     <div class="card">
                         <div class="card-body">
-                            <div class="img position-absolute" style="transform: translateY(-80px)">
-                                <img src="assest/img/industry/industri-1.png" alt="" width="150px">
+                            <div class="img position-absolute" style="transform: translateY(-70px)">
+                                <img src="assest/img/industry/industry-4.png" alt="" width="140px">
                             </div>
-                            <h3 class="text-end">PMI Palang Merah Indonesia</h3>
+                            <h3 style="padding-left: 150px">IDS Rumah Pendidikan</h3>
                             <hr style="color:#050f2c; margin-left:150px" width="300px">
                             <p class="mt-5">A social organization with the aim of devoting itself to others who need
                                 assistance / assistance due to disasters</p>
@@ -269,9 +269,9 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="img position-absolute" style="transform: translateY(-80px)">
-                                <img src="assest/img/industry/industri-1.png" alt="" width="150px">
+                                <img src="assest/img/industry/industry-2.png" alt="" width="150px">
                             </div>
-                            <h3 class="text-end">PMI Palang Merah Indonesia</h3>
+                            <h3 style="padding-left: 150px">Immobi</h3>
                             <hr style="color:#050f2c; margin-left:150px" width="300px">
                             <p class="mt-5">A social organization with the aim of devoting itself to others who need
                                 assistance / assistance due to disasters</p>
@@ -282,9 +282,9 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="img position-absolute" style="transform: translateY(-80px)">
-                                <img src="assest/img/industry/industri-1.png" alt="" width="150px">
+                                <img src="assest/img/industry/industry-4.jpg" alt="" width="150px">
                             </div>
-                            <h3 class="text-end">PMI Palang Merah Indonesia</h3>
+                            <h3 style="padding-left: 150px">Chlorine Digital Media </h3>
                             <hr style="color:#050f2c; margin-left:150px" width="300px">
                             <p class="mt-5">A social organization with the aim of devoting itself to others who need
                                 assistance / assistance due to disasters</p>
@@ -295,9 +295,9 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="img position-absolute" style="transform: translateY(-80px)">
-                                <img src="assest/img/industry/industri-1.png" alt="" width="150px">
+                                <img src="assest/img/industry/industy-6.jpg" alt="" width="150px" style="border-radius:100px">
                             </div>
-                            <h3 class="text-end">PMI Palang Merah Indonesia</h3>
+                            <h3 style="padding-left: 150px">Pospay</h3>
                             <hr style="color:#050f2c; margin-left:150px" width="300px">
                             <p class="mt-5">A social organization with the aim of devoting itself to others who need
                                 assistance / assistance due to disasters</p>
@@ -344,7 +344,7 @@
             <div class="row">
                 <div class="col mt-5 text-center">
                     <h4>Tunggu apalagi? Ayo lengkapi kebutuhan kamu sekarang juga!</h4>
-                    <button type="button" class="btn btn-primary mt-3">Pesan sekarang</button>
+                    <a href="https://wa.me/085710303705" class="btn btn-primary mt-3">Pesan sekarang</a>
                 </div>
             </div>
         </div>

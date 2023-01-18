@@ -87,7 +87,8 @@ class ProdukController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tefas = Tefa::where('id', $id)->first();
+        return view('admin-dashboard.edit', compact('tefas'));
     }
 
     /**

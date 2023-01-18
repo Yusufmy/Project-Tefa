@@ -39,16 +39,6 @@ class TefaController extends Controller
         return view('login.login');
     }
 
-    public function productProfit()
-    {
-        return view('admin-dashboard.productProfit');
-    }
-
-    public function industry()
-    {
-        return view('admin-dashboard.industry');
-    }
-
 
     public function auth(Request $request)
     {

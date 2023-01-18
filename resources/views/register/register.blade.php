@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('main')
-    <section id="register">
+    <div class="container-fluid">
         <div class="container">
             <div class="row mt-5">
                 <div class="col">
@@ -33,5 +33,4 @@
                 </div>
             </div>
         </div>
-    </section>
-@endsection
+    @endsection

@@ -21,8 +21,7 @@ Route::middleware('isLogin', 'CekRole:admin')->group(function () {
     Route::get('/tambahProduk', [ProdukController::class, 'create'])->name('tambah.produk');
     Route::post('/tambahProduk', [ProdukController::class, 'store'])->name('tambah-produk');
     Route::get('/productData', [TefaController::class, 'productData'])->name('product.data');
-    Route::get('/productProfit', [TefaController::class, 'productProfit'])->name('product.profit');
-    Route::get('/industry', [TefaController::class, 'industry'])->name('product.industry');
+    Route::get('/edit/{id}', [ProdukController::class, 'edit'])->name('edit');
     Route::delete('/delete/{id}', [ProdukController::class, 'destroy'])->name('delete');
 });
 
@@ -44,5 +43,6 @@ Route::middleware('isLogin')->group(function () {
     Route::get('/layout', [TefaController::class, 'layout'])->name('layout');
     Route::get('/error', [TefaController::class, 'error'])->name('error');
 });
+
 
 Route::post('/logout', [TefaController::class, 'logout'])->name('logout');

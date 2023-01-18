@@ -11,12 +11,11 @@ body {
     height: 695px;
 }
 
-#register{
+/* .register{
     background-image: url(../img/smk/gedungWikrama.jpg);
+    background-size: 100vh;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
+} */
 
 .jumbotron {
     background-image: url(../img/background.jpg);

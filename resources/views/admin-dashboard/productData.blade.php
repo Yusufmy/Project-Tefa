@@ -38,8 +38,13 @@
                             <form action="{{ route('delete', $item->id) }}" method="post">
                                 @method('delete')
                                 @csrf
-                                <button type="submit" class="btn btn-danger">delete</button>
+                                <button type="submit" class="btn btn-danger w-50">delete</button>
                             </form>
+                            {{-- <form action="{{route('edit', $item->id)}}" method="post">
+                                @csrf
+                                @method('patch')
+                                <button type="submit" class="btn btn-success mt-2 w-50">Edit</button>
+                            </form> --}}
                         </div>
                     </div>
                 </div>

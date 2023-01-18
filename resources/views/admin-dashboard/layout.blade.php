@@ -51,18 +51,6 @@
 
                 <!-- Divider -->
                 <hr class="sidebar-divider">
-                <!-- Nav Item - Pages Collapse Menu -->
-                <li class="nav-item">
-                    <a class="nav-link" href="productProfit">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Major Product Profit</span></a>
-                </li>
-                <hr class="sidebar-divider">
-                <li class="nav-item">
-                    <a class="nav-link" href="industry">
-                        <i class="fas fa-fw fa-tachometer-alt"></i>
-                        <span>Major Industry</span></a>
-                </li>
             @endif
         </ul>
 
